@@ -10,6 +10,8 @@
 		2ECBADA31F53AB1500AD03C2 /* TorcellyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECBAD991F53AB1400AD03C2 /* TorcellyKit.framework */; };
 		2ECBADA81F53AB1500AD03C2 /* TorcellyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECBADA71F53AB1500AD03C2 /* TorcellyKitTests.swift */; };
 		2ECBADAA1F53AB1500AD03C2 /* TorcellyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECBAD9C1F53AB1400AD03C2 /* TorcellyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED218DFE1F94C5EF007837B4 /* AVPlayer+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED218DFD1F94C5EF007837B4 /* AVPlayer+States.swift */; };
+		EDF83BCA1F977E62003E02D8 /* CoreGraphics+Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF83BC91F977E62003E02D8 /* CoreGraphics+Geometry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,12 @@
 		2ECBADA21F53AB1500AD03C2 /* TorcellyKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorcellyKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECBADA71F53AB1500AD03C2 /* TorcellyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorcellyKitTests.swift; sourceTree = "<group>"; };
 		2ECBADA91F53AB1500AD03C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ECBADC01F53AD3500AD03C2 /* UILabel+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Height.swift"; sourceTree = "<group>"; };
+		2ECBADC11F53AD3500AD03C2 /* UIView+CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CALayer.swift"; sourceTree = "<group>"; };
+		2ECBADC31F53AD5500AD03C2 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		2ECBADC41F53AD5500AD03C2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		ED218DFD1F94C5EF007837B4 /* AVPlayer+States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+States.swift"; sourceTree = "<group>"; };
+		EDF83BC91F977E62003E02D8 /* CoreGraphics+Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Geometry.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,8 @@
 		2ECBAD9B1F53AB1400AD03C2 /* TorcellyKit */ = {
 			isa = PBXGroup;
 			children = (
+				2ECBADBF1F53AD3500AD03C2 /* Extensions */,
+				2ECBADC21F53AD5500AD03C2 /* Cells */,
 				2ECBAD9C1F53AB1400AD03C2 /* TorcellyKit.h */,
 				2ECBAD9D1F53AB1400AD03C2 /* Info.plist */,
 			);
@@ -84,6 +94,26 @@
 				2ECBADA91F53AB1500AD03C2 /* Info.plist */,
 			);
 			path = TorcellyKitTests;
+			sourceTree = "<group>";
+		};
+		2ECBADBF1F53AD3500AD03C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2ECBADC01F53AD3500AD03C2 /* UILabel+Height.swift */,
+				2ECBADC11F53AD3500AD03C2 /* UIView+CALayer.swift */,
+				ED218DFD1F94C5EF007837B4 /* AVPlayer+States.swift */,
+				EDF83BC91F977E62003E02D8 /* CoreGraphics+Geometry.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2ECBADC21F53AD5500AD03C2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2ECBADC31F53AD5500AD03C2 /* MainCollectionViewCell.swift */,
+				2ECBADC41F53AD5500AD03C2 /* MainTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED218DFE1F94C5EF007837B4 /* AVPlayer+States.swift in Sources */,
+				EDF83BCA1F977E62003E02D8 /* CoreGraphics+Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.torcelly.TorcellyKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,6 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.torcelly.TorcellyKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,6 +412,7 @@
 		2ECBADB11F53AB1500AD03C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = VM7B3AWTR8;
 				INFOPLIST_FILE = TorcellyKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -391,6 +426,7 @@
 		2ECBADB21F53AB1500AD03C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = VM7B3AWTR8;
 				INFOPLIST_FILE = TorcellyKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
