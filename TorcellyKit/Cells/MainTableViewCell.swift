@@ -1,6 +1,6 @@
 //
 //  MainTableViewCell.swift
-//  Backstage
+//  TorcellyKit
 //
 //  Created by Fernando Torcelly on 14/8/17.
 //  Copyright © 2017 Fernando Torcelly. All rights reserved.
