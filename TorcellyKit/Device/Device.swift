@@ -106,6 +106,11 @@ public struct Device {
         return type ?? .unknown
     }
     
+    public static func deviceSize() -> CGSize {
+        let index = Device.deviceSizeIndex()
+        return Device.screenSizes[index]
+    }
+    
     private static func deviceSizeIndex() -> Int {
         let currentScreenSize = UIScreen.main.bounds.size
         let inverseCurrentScreenSize = CGSize.init(width: UIScreen.main.bounds.height, height: UIScreen.main.bounds.width)
