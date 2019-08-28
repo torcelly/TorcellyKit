@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension DispatchQueue {
+extension DispatchQueue {
     
     private static var _onceTracker = [String]()
     
@@ -20,7 +20,7 @@ public extension DispatchQueue {
     - parameter block: Block to execute once
     **/
     
-    public class func once(token: String, block:() -> Void) {
+    open class func once(token: String, block:() -> Void) {
         objc_sync_enter(self); defer { objc_sync_exit(self) }
         
         if _onceTracker.contains(token) {
