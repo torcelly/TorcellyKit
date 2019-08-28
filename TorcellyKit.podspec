@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
 
   s.source_files     = 'TorcellyKit/**/*.swift'
+  s.swift_version    = '4.2'
   s.frameworks       = 'UIKit'
 
   s.ios.deployment_target = '8.0'
