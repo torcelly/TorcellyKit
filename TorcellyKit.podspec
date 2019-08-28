@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TorcellyKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Useful classes and categories used to develop my apps faster."
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.description  = <<-DESC
