@@ -1,9 +1,9 @@
 //
 //  MainCollectionViewCell.swift
-//  Squire Console
+//  TorcellyKit
 //
 //  Created by Fernando Torcelly on 28/8/17.
-//  Copyright © 2017 Fernando Torcelly. All rights reserved.
+//  Copyright © 2018 Fernando Torcelly. All rights reserved.
 //
 
 import UIKit

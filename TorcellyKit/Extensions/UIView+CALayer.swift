@@ -1,6 +1,6 @@
 //
 //  UIView+CALayer.swift
-//  Hanbai
+//  TorcellyKit
 //
 //  Created by Fernando Torcelly on 29/7/17.
 //  Copyright © 2017 Fernando Torcelly. All rights reserved.
@@ -27,5 +27,9 @@ extension UIView {
         self.layer.shadowOffset  = offset
         self.layer.shadowRadius  = radius
         self.layer.shadowOpacity = opacity
+    }
+    
+    public func removeShadow() {
+        self.layer.shadowColor   = nil
     }
 }

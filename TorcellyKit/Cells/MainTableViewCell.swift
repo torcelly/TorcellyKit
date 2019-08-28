@@ -1,6 +1,6 @@
 //
 //  MainTableViewCell.swift
-//  Backstage
+//  TorcellyKit
 //
 //  Created by Fernando Torcelly on 14/8/17.
 //  Copyright © 2017 Fernando Torcelly. All rights reserved.
@@ -12,7 +12,7 @@ open class MainTableViewCell: UITableViewCell {
     
     // MARK: - Initializers
     
-    public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: MainTableViewCell.identifier())
         self.build()
     }
