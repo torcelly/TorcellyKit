@@ -28,4 +28,8 @@ extension UIView {
         self.layer.shadowRadius  = radius
         self.layer.shadowOpacity = opacity
     }
+    
+    public func removeShadow() {
+        self.layer.shadowColor   = nil
+    }
 }
